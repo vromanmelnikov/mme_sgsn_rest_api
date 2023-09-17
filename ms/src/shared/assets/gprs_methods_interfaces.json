@@ -1,0 +1,178 @@
+{
+    "GPRS": {
+        "ATTACH_REQUEST": {
+            "RAI": "",
+            "TMSI/P-TMSI/M-TMSI/5G-TMSI": "",
+            "ATTACH_TYPE": ""
+        },
+        "IDENTITY_REQUEST": {},
+        "IDENTITY_RESPONSE": {
+            "IMEISV": ""
+        },
+        "ATTACH_ACCEPT": {
+            "RAI": "",
+            "P-TMSI": ""
+        },
+        "ATTACH_COMPLETE": {},
+        "ACTIVATE_PDP_CONTEXT_REQUEST": {
+            "APN": "",
+            "NSAPI": "",
+            "LLCSAPI": ""
+        },
+        "DNS_QUERY_REQUEST": {
+            "APN": "",
+            "GOI": ""
+        },
+        "DNS_QUERY_RESPONSE": {
+            "GGSN_IP": ""
+        },
+        "CREATE_PDP_CONTEXT_REQUEST": {
+            "APN": "",
+            "IMSI": "",
+            "IMEISV": "",
+            "MSISDN": "",
+            "RAI": "",
+            "GSN_ADDRESS": "",
+            "NSAPI": "",
+            "TEID": "",
+            "TEID_DATA": "",
+            "TEID_CONTROL_PLANE": "",
+            "SAI": ""
+        },
+        "CREATE_PDP_CONTEXT_RESPONSE": {
+            "END_USER_ADDRESS": "",
+            "GSN_ADRESS": "",
+            "TEID": "",
+            "TEID_DATA": "",
+            "TEID_CONTROL_PLANE": "",
+            "CHARGIND_ID": ""
+        },
+        "ACTIVATE_PDP_CONTEXT_ACCEPT": {
+            "ID_ADDRESS": "",
+            "LLCSAPI": ""
+        }
+    },
+    "LTE": {
+        "INITIAL_UE_MESSAGE/ATTACH_REQUEST/PDP_CONNECTIVITY_REQUEST": {
+            "TAI": "",
+            "GUTI": ""
+        },
+        "AUTHENTICATION_REQUEST": {
+            "MME_UE_S1AP_ID": "80801729",
+            "ENB_UE_S1AP_ID": "12980354",
+            "AUTN": "",
+            "RAND": ""
+        },
+        "AUTHENTICATION_RESPONSE": {
+            "MME_UE_S1AP_ID": "80801729",
+            "ENB_UE_S1AP_ID": "12980354",
+            "RES": ""
+        },
+        "SECURITY_MODE_COMMAND": {},
+        "SECURITY_MODE_COMMAND": {
+            "IMEISV": ""
+        },
+        "ESM_INFORMATION_REQUEST": {},
+        "ESM_INFORMATION_RESPONSE": {
+            "APN": ""
+        },
+        "CREATE_SESSION_REQUEST": {
+            "IMSI": "",
+            "MSISDN": "",
+            "IMEI": "",
+            //USER LOCATION INFO
+            "ULI": {
+                //TRACKING AREA ID
+                "TAI": "",
+                //E-UTRAN CELL GLOBAL ID
+                "ECGI": ""
+            },
+            "APN": "",
+            "BEARER_CONTEXT": {
+                "EPS_BEARER_ID": "",
+                "BEARER_QOS": ""
+            },
+            "F_TEID": [
+                {
+                    "INTERFACE_TYPE": "S11",
+                    "F_TEID_IPV4": ""
+                },
+                {
+                    "INTERFACE_TYPE": "S5/S8",
+                    "F_TEID_IPV4": ""
+                }
+            ]
+        },
+        "CREATE_SESSION_RESPONSE": {
+            "F-TEID": [
+                {
+                    "INTERFACE_TYPE": "S11/S4-SGW",
+                    "F_TEID_IPV4": ""
+                },
+                {
+                    "INTERFACE_TYPE": "S5/S8-PGW",
+                    "F_TEID_IPV4": ""
+                }
+            ],
+            //PDP ADDRESS ALLOCATION
+            "PAA": "10.22.121.62",
+            "BEARER_CONTEXT": {
+                "EBI": 5,
+                "F_TEID": [
+                    {
+                        "INTERFACE_TYPE": "S1-U-SGW",
+                        "F_TEID": ""
+                    },
+                    {
+                        "INTERFACE_TYPE": "S5/S8-PGW",
+                        "F_TEID": ""
+                    }
+                ]
+            }
+        },
+        "INITIAL_CONTEXT_SETUP_REQUEST/ATTACH_ACCEPT/ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REQUEST": {
+            "MME_UE_S1AP_ID": "80801729",
+            "ENB_UE_S1AP_ID": "12980354",
+            "E_RAB_ID": 5,
+            "TRANSPORT_LAYER_ADDRESS": "",
+            "GTP_TEID": "",
+            "NAS_PDU": {
+                "TAI": "",
+                "LAI": "",
+                "P_TMSI":"",
+                "ESM_MESSAGE_CONTAINER": {
+                    "APN": "",
+                    "PDN_ADDRESS": ""
+                }
+            },
+            "SECURITY_KEY": "",
+            "MASKED_IMEISV": ""
+        },
+        "ATTACH_COMPLETE": {
+            "MME_UE_S1AP_ID": "80801729",
+            "ENB_UE_S1AP_ID": "12980354",
+            "NAS_PDU": "ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_ACCEPT"
+        },
+        "MODIFY_BEARER_REQUEST": {
+            "TEID": "",
+            "F_TEID": [
+                {
+                    "INTERFACE_TYPE": "S1-U-ENODEB",
+                    "F_TEID": ""
+                }
+            ]
+        },
+        "MODIFY_BEARER_RESPONSE": {
+            "TEID": "",
+            "BEARER_CONTEXT": {
+                "EPS_BEARER_ID": 5,
+                "F_TEID": [
+                    {
+                        "INTERFACE_TYPE": "S1-U-SGW",
+                        "F_TEID": ""
+                    }
+                ]
+            }
+        }
+    }
+}

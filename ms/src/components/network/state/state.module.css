@@ -1,0 +1,15 @@
+.container {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem
+}
+
+.state {
+    opacity: .5;
+}
+
+.active {
+    opacity: 1;
+}

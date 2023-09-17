@@ -1,0 +1,27 @@
+.console {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    border: 3px solid grey;
+    overflow-y: auto;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.console span {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.error {
+    color: rgb(249, 42, 42) !important
+}
+
+.success {
+    color: rgb(2, 170, 2) !important
+}
+
+.text {
+    color: white
+}
